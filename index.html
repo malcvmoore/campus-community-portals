@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Campus Community AR Portals</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"
+  </head>
+  <body>
+
+    <ul id="menu">
+        <li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">Third slide</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth slide</a></li>
+    </ul>
+
+    <div id="fullpage">
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script>    
+
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+            licenseKey: '3DGcFJQ%u1',
+            autoScrolling:true,
+            scrollHorizontally: true,
+            scrollingSpeed: 1000,
+            navigation: true,
+            navigationPosition: 'right',
+            anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+            sectionsColor: ['#45ff5f', '#ff5f45', '#ffbc45', '#5f45ff'],
+            navigationTooltips: ['First page', 'Second page', 'Third', 'Last page']
+        });
+    </script>
+  </body>
+</html>
