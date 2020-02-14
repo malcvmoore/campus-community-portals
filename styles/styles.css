@@ -1,3 +1,19 @@
+img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+h1,h2,h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Menu Styles */
 #menu li {
 	display:inline-block;
 	margin: 10px;
