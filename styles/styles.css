@@ -31,6 +31,8 @@ p {
 	color: whitesmoke;
 }
 
+.header-shadow {text-shadow: 2px 8px 6px rgba(0,0,0,0.4), 0px -5px 35px rgba(255,255,255,0.4);
+}
 .section:nth-child(1) {
     background-image: url("https://raw.githubusercontent.com/malcvmoore/campus-community-portals/master/images/umd-aerial.jpg");
     background-size: cover;
@@ -79,12 +81,8 @@ ul { list-style-type: none;}
 	.p4 {padding: 5rem;}
 }
 
-
-@media screen and (max-width: 700px) {
-	.wrapper {   
-	  flex-direction: row;
-	}
-	.content, .mockup, .mockup3, .content3 {
+@media (max-width: 700px) {
+	.content, .mockup, .mockup3, .content3, .content1 {
 	  flex: 100% !important;
 	}
   }
