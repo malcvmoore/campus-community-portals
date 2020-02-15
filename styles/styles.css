@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Montserrat Black";
-		src: url("fonts/Montserrat-Black.otf");
+		src: url("/css/fonts/Montserrat-Black.ttf");
 	}
 
 img {
@@ -11,20 +11,28 @@ img {
 .small img {
 	max-width: 75%;
 }
-h1,h2,h3 {
+h1 {
     margin: 10px;
     padding: 5px;
 	font-family: 'Montserrat Black', sans-serif;
 	color: white;
-}
-h1 {
-	font-size: 3.0rem;
+	font-size: 2.5rem;
 }
 
-p {font-family: 'Ubuntu', sans-serif;}
+h2,h3 {
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+}
+
+h3 {font-size: 1.5rem;}
+
+p {
+	font-family: 'Ubuntu', sans-serif;
+	color: whitesmoke;
+}
 
 .section:nth-child(1) {
-	background-image: url(""); 
+	background-image: url(/images/umd-aerial.jpg);
 	background-size: cover;
 }
 
@@ -42,6 +50,11 @@ ul { list-style-type: none;}
 
 .content {
 	flex: 60%;
+	padding: 50px;
+}
+.content1 {
+	flex: 100%;
+	padding: 50px;
 }
 .mockup {
 	flex: 40%; 
@@ -59,7 +72,7 @@ ul { list-style-type: none;}
 
 @media screen and (max-width: 600px){
 
-	.content, .mockup {flex: 100%;}
+	.content, .mockup, .mockup3, .content3 {flex: 100%;}
 
 }
 
