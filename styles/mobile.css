@@ -52,7 +52,7 @@ ul { list-style-type: none;}
 }
 
 .content, .content1, .content3, .mockup, .mockup3 {
-	flex:100% !importantw;
+	flex:100% !important;
 	padding: 50px;
 }
 
