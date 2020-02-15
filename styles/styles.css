@@ -1,17 +1,68 @@
+@font-face {
+	font-family: "Montserrat Black";
+		src: url("fonts/Montserrat-Black.otf");
+	}
+
 img {
     max-width: 85%;
     margin: 0 auto;
     display: block;
 }
+.small img {
+	max-width: 75%;
+}
 h1,h2,h3 {
     margin: 10px;
     padding: 5px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Montserrat Black', sans-serif;
 	color: white;
 }
-h1 {font-size: 3.0rem;}
+h1 {
+	font-size: 3.0rem;
+}
 
-p {font-family: 'Lato', sans-serif;}
+p {font-family: 'Ubuntu', sans-serif;}
+
+.section:nth-child(1) {
+	background-image: url(""); 
+	background-size: cover;
+}
+
+ul { list-style-type: none;}
+
+
+/* Flexbox */
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.content {
+	flex: 60%;
+}
+.mockup {
+	flex: 40%; 
+	padding: 50px;
+}
+
+.mockup3, .content3 {
+	flex: 33.333333%; 
+	padding: 50px;
+}
+
+.mockup3 img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 600px){
+
+	.content, .mockup {flex: 100%;}
+
+}
+
 
 
 /* Menu Styles */
@@ -60,3 +111,8 @@ p {font-family: 'Lato', sans-serif;}
 #fp-nav ul li a span, #menu-line, .fp-slidesNav ul li a span {
     background: #fff;
 }
+
+@media (max-width:700px) {
+	.p4 {padding: 5rem;}
+}
+
