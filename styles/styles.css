@@ -32,7 +32,7 @@ p {
 }
 
 .section:nth-child(1) {
-	background-image: url(/images/umd-aerial.jpg);
+	background-image: url("/images/umd-aerial.jpg");
 	background-size: cover;
 }
 
