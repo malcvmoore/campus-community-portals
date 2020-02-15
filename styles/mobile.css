@@ -16,7 +16,7 @@ h1 {
     padding: 5px;
 	font-family: 'Montserrat Black', sans-serif;
 	color: white;
-	font-size: 2.5rem;
+	font-size: 3.5rem !important;
 }
 
 h2,h3 {
@@ -24,7 +24,7 @@ h2,h3 {
 	color: white;
 }
 
-h3 {font-size: 1.5rem;}
+h3 {font-size: 2.5rem !important;}
 
 p {
 	font-family: 'Ubuntu', sans-serif;
@@ -33,6 +33,7 @@ p {
 
 .header-shadow {text-shadow: 2px 8px 6px rgba(0,0,0,0.4), 0px -5px 35px rgba(255,255,255,0.4);
 }
+
 .section:nth-child(1) {
     background-image: url("https://raw.githubusercontent.com/malcvmoore/campus-community-portals/master/images/umd-aerial.jpg");
     background-size: cover;
@@ -50,21 +51,8 @@ ul { list-style-type: none;}
 	flex-wrap: wrap;
 }
 
-.content {
-	flex: 60%;
-	padding: 50px;
-}
-.content1 {
-	flex: 100%;
-	padding: 50px;
-}
-.mockup {
-	flex: 40%; 
-	padding: 50px;
-}
-
-.mockup3, .content3 {
-	flex: 33.333333%; 
+.content, .content1, .content3, .mockup, .mockup3 {
+	flex:100% !importantw;
 	padding: 50px;
 }
 
