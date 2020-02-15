@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Montserrat Black";
-		src: url("https://raw.githubusercontent.com/malcvmoore/campus-community-portals/master/css/fonts/Montserrat-Black.ttf");
+		src: url("https://raw.githubusercontent.com/malcvmoore/campus-community-portals/master/css/fonts/Montserrat-Black.otf");
 	}
 
 img {
@@ -41,6 +41,15 @@ ul { list-style-type: none;}
 
 /* Flexbox */
 
+@media screen and (max-width: 700px) {
+	.wrapper {   
+	  flex-direction: row;
+	}
+	.content, .mockup, .mockup3, .content3 {
+	  flex: 100% !important;
+	}
+  }
+
 .wrapper {
 	display: flex;
 	align-items: center;
@@ -69,13 +78,6 @@ ul { list-style-type: none;}
 .mockup3 img {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-@media screen and (max-width: 600px){
-
-	.content, .mockup, .mockup3, .content3 {flex: 100%;}
-
-}
-
 
 
 /* Menu Styles */
